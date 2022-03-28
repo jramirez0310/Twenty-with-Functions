@@ -11,7 +11,7 @@ function greeting(a){
     alert (`Welcome, ${a}, to the new and improved Twenty with Functions! Here, You will play against the computer to see who can get closer to twenty. If you go over twenty, you lose. The same goes for the computer. If you both go over twenty, then whoever is closer to Twenty will win. If you both get the same number, you will tie.`)
 }
 
-greeting(askName())
+
 
 function userNum(){
     alert( `It is now your turn.`)
@@ -141,7 +141,27 @@ function winChoice(a, b){
 
     }
 
+    alert(`Your score is ${h_score}. The computer's score is ${c_score}`)
 
 }
 
-winChoice(userNum(), comNum())
+function game() {
+
+    greeting(askName())
+
+    winChoice(userNum(), comNum()) 
+
+    var q = prompt("If you want to play again, please press y.")
+
+    if (q == "y") {
+
+        game()
+
+    } else {
+
+        alert("Thank you for playing the newly improved Twenty with Functions.")
+
+    }
+}
+
+game()
