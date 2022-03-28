@@ -151,7 +151,7 @@ function game() {
 
     winChoice(userNum(), comNum()) 
 
-    var q = prompt("If you want to play again, please press y.")
+    var q = prompt("If you want to play again, please press y. Anything else will result in you leaving the game.")
 
     if (q == "y") {
 
