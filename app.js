@@ -83,6 +83,10 @@ function winChoice(a, b){
 
                 c_score++
 
+            } else if (a == b){
+
+                alert("You and the Computer got the same number. So, by default, you tie!")
+
             }
 
         } else if ((a < 20) && (b > 20)){
@@ -97,7 +101,7 @@ function winChoice(a, b){
 
             c_score++
 
-        } else if ((a > 20) && (b < 20)){
+        } else if ((a > 20) && (b > 20)){
 
             if (a > b){
 
@@ -110,6 +114,10 @@ function winChoice(a, b){
                 alert(`You got ${a}. The computer got ${b}. Because you both went over 20 and your number was less than the computer, you win!`)
 
                 h_score++
+
+            } else if (a == b){
+
+                alert("You and the Computer got the same number. So, by default, you tie!")
 
             }
 
