@@ -11,8 +11,6 @@ function greeting(a){
     alert (`Welcome, ${a}, to the new and improved Twenty with Functions! Here, You will play against the computer to see who can get closer to twenty. If you go over twenty, you lose. The same goes for the computer. If you both go over twenty, then whoever is closer to Twenty will win. If you both get the same number, you will tie.`)
 }
 
-
-
 function userNum(){
     alert( `It is now your turn.`)
 
