@@ -10,6 +10,8 @@ function greeting(a){
 greeting(askName())
 
 function userNum(){
+    alert( `It is now your turn.`)
+
     h_num = Math.floor(Math.random() * 10) + 1
 
     h_total = 0 + h_num
@@ -24,6 +26,8 @@ function userNum(){
             h_num = Math.floor(Math.random() * 10) + 1
 
             h_total = h_total + h_num
+
+            alert(`You drew ${h_num}. Your total is ${h_total}`)
             
         } else if (h_choice == "n"){
 
@@ -39,4 +43,16 @@ function userNum(){
     return h_total
 }
 
-alert(userNum())
+function comNum(){
+    alert(`It is now the computer's turn`)
+
+    do{
+
+        c_num = Math.floor(Math.random() * 10) + 1
+
+        c_total = c_num + c_total
+
+        alert(`The computer drew ${c_num}. It's total is ${c_total}.`)
+
+    } while (c_total < 16)
+}
